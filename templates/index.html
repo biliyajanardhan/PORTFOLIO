@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janardhana | AI/ML & MLOps Engineer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+      <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+</head>
+
+<body class="bg-black text-gray-300 font-sans scroll-smooth">
+
+<div class="flex min-h-screen">
+
+  <!-- ================= LEFT SIDEBAR ================= -->
+  <aside class="w-72 bg-black border-r border-gray-800 px-8 py-10 fixed h-screen">
+
+    <!-- Profile -->
+    <div class="mb-12 text-center">
+      <img
+        src="{{ url_for('static', filename='img/img.jpeg') }}"
+        alt="Janardhana"
+        class="w-24 h-24 mx-auto rounded-full object-cover border-2 border-purple-500 mb-4"
+      />
+      <h1 class="text-xl font-bold text-white">B JANARDHANA BILIYA</h1>
+      <p class="text-sm text-gray-500">AI/ML · MLOps Engineer</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="space-y-5 text-sm">
+      <a href="#home" class="block text-purple-500 font-semibold">HOME</a>
+      <a href="#about" class="block hover:text-purple-400">ABOUT</a>
+      <a href="#whatido" class="block hover:text-purple-400">WHAT I DO</a>
+      <a href="#skills" class="block hover:text-purple-400">SKILLS</a>
+      <a href="#experience" class="block hover:text-purple-400">EXPERIENCE</a>
+      <a href="#projects" class="block hover:text-purple-400">PROJECTS</a>
+      <a href="#contact" class="block hover:text-purple-400">CONTACT</a>
+    </nav>
+
+    <!-- Search -->
+    <div class="mt-12">
+      <input
+        type="text"
+        placeholder="Search..."
+        class="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-sm focus:outline-none"
+      />
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="ml-72 flex-1 px-20 py-24" id="home">
+
+    <!-- HERO -->
+    <!-- HERO -->
+<section class="min-h-screen flex items-center">
+  <div class="max-w-3xl">
+
+    <!-- Small badge -->
+    <span class="inline-block mb-6 px-4 py-1 text-sm
+                 border border-purple-500/40
+                 text-purple-400 rounded-full tracking-wide">
+      AI / ML · MLOps · Cloud
+    </span>
+
+    <!-- Main heading -->
+    <h1 class="text-7xl font-extrabold text-white mb-8 leading-tight">
+      HELLO,
+      <br />
+      I’m <span class="text-6xl text-purple-400">B Janardhana Biliya</span>
+    </h1>
+
+    <!-- Description -->
+    <p class="text-xl text-gray-400 leading-relaxed">
+      I’m <span class="text-white font-semibold">B. Janardhana Biliya</span>,
+      an <span class="text-purple-400 font-semibold">AI/ML & MLOps Engineer</span>
+      with over <span class="text-white">2+ years of hands-on experience</span>
+      building <span class="text-white">production-grade machine learning systems</span>.
+      <br><br>
+      I specialize in <span class="text-white">scalable MLOps pipelines</span>,
+      end-to-end <span class="text-white">CI/CD automation</span>, and deploying
+      reliable AI services across
+      <span class="text-white">Kubernetes, Azure, and AWS</span>.
+      <br><br>
+      My work focuses on creating
+      <span class="text-white">robust, observable, and business-critical AI systems</span>
+      that operate confidently in real-world production environments.
+    </p>
+
+    <!-- Divider -->
+    <div class="mt-8 h-1 w-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded"></div>
+
+    <!-- CTA buttons -->
+    <div class="mt-10 flex gap-6">
+      <a href="#projects"
+         class="px-8 py-3 bg-purple-600 text-white font-semibold rounded
+                hover:bg-purple-700 transition">
+        View Projects
+      </a>
+
+      <a href="{{ url_for('static', filename='resume.pdf') }}"
+         class="px-8 py-3 border border-gray-600 rounded
+                hover:border-purple-500 transition">
+        Download CV
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24 border-t border-gray-800">
+  <div class="max-w-5xl">
+
+    <!-- Section title -->
+    <h2 class="text-4xl font-bold text-white mb-6">
+      About Me
+    </h2>
+
+    <!-- Subtitle -->
+    <p class="text-purple-400 uppercase tracking-widest text-sm mb-8">
+      Who I am & how I work
+    </p>
+
+    <!-- Main content -->
+    <p class="text-gray-400 leading-relaxed mb-8">
+      I am an <span class="text-white font-semibold">AI/ML & MLOps Engineer</span>
+      currently working at
+      <span class="text-white font-semibold">
+        Mangalore Refinery and Petrochemicals Limited (MRPL)
+      </span>,
+      where I design, deploy, and maintain
+      <span class="text-white">production-grade machine learning systems</span>
+      in industrial environments.
+    </p>
+
+    <p class="text-gray-400 leading-relaxed mb-12">
+      My expertise lies in building
+      <span class="text-white">end-to-end ML pipelines</span>,
+      automating the ML lifecycle with
+      <span class="text-white">CI/CD workflows</span>,
+      and deploying scalable AI services on
+      <span class="text-white">Kubernetes, Azure, and AWS</span>.
+      I strongly focus on
+      <span class="text-white">reliability, observability, and real-world impact</span>
+      rather than experimental or demo-only models.
+    </p>
+
+    <!-- Highlights -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="border border-gray-800 rounded-xl p-6">
+        <h3 class="text-purple-400 font-semibold mb-2">
+          Production Mindset
+        </h3>
+        <p class="text-gray-400 text-sm">
+          I build ML systems designed to run reliably in real-world,
+          high-stakes production environments.
+        </p>
+      </div>
+
+      <div class="border border-gray-800 rounded-xl p-6">
+        <h3 class="text-purple-400 font-semibold mb-2">
+          MLOps Expertise
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Strong experience in experiment tracking, CI/CD automation,
+          model versioning, and monitoring.
+        </p>
+      </div>
+
+      <div class="border border-gray-800 rounded-xl p-6">
+        <h3 class="text-purple-400 font-semibold mb-2">
+          Cloud & Scale
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Deploying scalable AI systems using Kubernetes,
+          Azure, AWS, and modern cloud-native tools.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- WHAT I DO -->
+<!-- ================= WHAT I DO ================= -->
+<section id="whatido" class="py-24 border-t border-gray-800">
+  <h2 class="text-4xl font-bold text-white mb-4">What I Do</h2>
+  <p class="text-gray-500 mb-12 max-w-2xl">
+    I build reliable, scalable, and production-ready AI systems by combining
+    machine learning, MLOps, and cloud-native technologies.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-10 max-w-6xl">
+
+    <!-- Card 1 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <div class="text-purple-400 text-3xl mb-4">🧠</div>
+      <h3 class="text-xl font-semibold text-white mb-3">
+        End-to-End Machine Learning
+      </h3>
+      <p class="text-gray-400 leading-relaxed">
+        Design, train, evaluate, deploy, and monitor machine learning models
+        for real-world production use cases, focusing on performance,
+        reliability, and scalability.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <div class="text-purple-400 text-3xl mb-4">⚙️</div>
+      <h3 class="text-xl font-semibold text-white mb-3">
+        MLOps & Automation
+      </h3>
+      <p class="text-gray-400 leading-relaxed">
+        Build automated MLOps pipelines with CI/CD workflows, experiment tracking,
+        model versioning, and scheduled retraining for continuous model improvement.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <div class="text-purple-400 text-3xl mb-4">☁️</div>
+      <h3 class="text-xl font-semibold text-white mb-3">
+        Kubernetes & Cloud Deployment
+      </h3>
+      <p class="text-gray-400 leading-relaxed">
+        Deploy scalable and fault-tolerant ML services on Kubernetes,
+        leveraging Azure and AWS for cloud-native production environments.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <div class="text-purple-400 text-3xl mb-4">📊</div>
+      <h3 class="text-xl font-semibold text-white mb-3">
+        Monitoring & Reliability
+      </h3>
+      <p class="text-gray-400 leading-relaxed">
+        Implement data drift, model drift, and system health monitoring using
+        Prometheus, Grafana, and ML observability tools to ensure long-term stability.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+        <!-- ================= SKILLS ================= -->
+    <section id="skills" class="py-24 border-t border-gray-800">
+    <h2 class="text-4xl font-bold text-white mb-12">Skills & Technologies</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl">
+
+        <!-- Programming -->
+        <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <h3 class="text-purple-400 font-semibold mb-6">Programming</h3>
+        <div class="grid grid-cols-3 gap-6 text-center text-sm">
+            <div>
+            <i class="devicon-python-plain colored text-4xl"></i>
+            <p class="mt-2">Python</p>
+            </div>
+            <div>
+            <i class="devicon-postgresql-plain colored text-4xl"></i>
+            <p class="mt-2">SQL</p>
+            </div>
+            <div>
+            <i class="devicon-react-original colored text-4xl"></i>
+            <p class="mt-2">React</p>
+            </div>
+            <div>
+            <i class="devicon-php-plain colored text-4xl"></i>
+            <p class="mt-2">PHP</p>
+            </div>
+        </div>
+        </div>
+
+<!-- Machine Learning -->
+<div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+  <h3 class="text-purple-400 font-semibold mb-6">ML & AI</h3>
+
+  <div class="grid grid-cols-3 gap-6 text-center text-sm">
+    <div>
+      <i class="devicon-python-plain colored text-4xl"></i>
+      <p class="mt-2">Scikit-learn</p>
+    </div>
+
+    <div>
+      <i class="devicon-tensorflow-original colored text-4xl"></i>
+      <p class="mt-2">TensorFlow</p>
+    </div>
+
+    <div>
+      <i class="devicon-pytorch-original colored text-4xl"></i>
+      <p class="mt-2">PyTorch</p>
+    </div>
+
+    <div>
+      <i class="devicon-opencv-plain colored text-4xl"></i>
+      <p class="mt-2">OpenCV</p>
+    </div>
+
+    <div>
+      <i class="devicon-huggingface-original colored text-4xl"></i>
+      <p class="mt-2">Hugging Face</p>
+    </div>
+
+    <div>
+      <i class="devicon-python-plain colored text-4xl"></i>
+      <p class="mt-2">NLP</p>
+    </div>
+  </div>
+</div>
+
+
+        <!-- MLOps & DevOps -->
+        <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <h3 class="text-purple-400 font-semibold mb-6">MLOps & DevOps</h3>
+        <div class="grid grid-cols-3 gap-6 text-center text-sm">
+            <div>
+            <i class="devicon-docker-plain colored text-4xl"></i>
+            <p class="mt-2">Docker</p>
+            </div>
+            <div>
+            <i class="devicon-kubernetes-plain colored text-4xl"></i>
+            <p class="mt-2">Kubernetes</p>
+            </div>
+            <div>
+            <i class="devicon-githubactions-plain colored text-4xl"></i>
+            <p class="mt-2">GitHub Actions</p>
+            </div>
+            <div>
+            <i class="devicon-jenkins-line colored text-4xl"></i>
+            <p class="mt-2">Jenkins</p>
+            </div>
+            <div>
+            <i class="devicon-apacheairflow-plain colored text-4xl"></i>
+            <p class="mt-2">Airflow</p>
+            </div>
+            <div>
+            <i class="devicon-git-plain colored text-4xl"></i>
+            <p class="mt-2">Git</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <h3 class="text-purple-400 font-semibold mb-6">Cloud Platforms</h3>
+        <div class="grid grid-cols-3 gap-6 text-center text-sm">
+            <div>
+            <i class="devicon-azure-plain colored text-4xl"></i>
+            <p class="mt-2">Azure</p>
+            </div>
+            <div>
+            <i class="devicon-amazonwebservices-original colored text-4xl"></i>
+            <p class="mt-2">AWS</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Monitoring -->
+        <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <h3 class="text-purple-400 font-semibold mb-6">Monitoring</h3>
+        <div class="grid grid-cols-3 gap-6 text-center text-sm">
+            <div>
+            <i class="devicon-prometheus-original colored text-4xl"></i>
+            <p class="mt-2">Prometheus</p>
+            </div>
+            <div>
+            <i class="devicon-grafana-original colored text-4xl"></i>
+            <p class="mt-2">Grafana</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <h3 class="text-purple-400 font-semibold mb-6">Databases</h3>
+        <div class="grid grid-cols-3 gap-6 text-center text-sm">
+            <div>
+            <i class="devicon-postgresql-plain colored text-4xl"></i>
+            <p class="mt-2">PostgreSQL</p>
+            </div>
+            <div>
+            <i class="devicon-mysql-plain colored text-4xl"></i>
+            <p class="mt-2">MySQL</p>
+            </div>
+            <div>
+            <i class="devicon-mongodb-plain colored text-4xl"></i>
+            <p class="mt-2">MongoDB</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="py-24 border-t border-gray-800">
+  <h2 class="text-4xl font-bold text-white mb-12">Experience</h2>
+
+  <div class="relative max-w-4xl">
+
+    <!-- Vertical line -->
+    <div class="absolute left-3 top-0 h-full w-px bg-gray-800"></div>
+
+    <!-- ================= ROLE 1 ================= -->
+    <div class="relative pl-12 pb-16">
+      <!-- Dot -->
+      <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-purple-600"></div>
+
+      <h3 class="text-xl font-semibold text-white">
+        AI/ML Engineer – MLOps
+      </h3>
+
+      <p class="text-purple-400 text-sm mb-1">
+        Mangalore Refinery and Petrochemicals Limited (MRPL)
+      </p>
+
+      <p class="text-gray-500 text-sm mb-4">
+        Sep 2023 – Present · Mangalore, Karnataka, India
+      </p>
+
+      <ul class="list-disc ml-5 text-gray-400 space-y-3">
+        <li>
+          Designed and deployed
+          <span class="text-white">production-grade MLOps pipelines</span>
+          for industrial machine learning systems.
+        </li>
+        <li>
+          Implemented
+          <span class="text-white">CI/CD automation</span>
+          using Docker, MLflow, GitHub Actions, and Jenkins.
+        </li>
+        <li>
+          Deployed scalable ML inference services on
+          <span class="text-white">on-prem Kubernetes clusters</span>.
+        </li>
+        <li>
+          Built monitoring and alerting solutions using
+          <span class="text-white">Prometheus and Grafana</span>
+          for system and model health.
+        </li>
+      </ul>
+    </div>
+
+    <!-- ================= ROLE 2 ================= -->
+    <div class="relative pl-12 pb-4">
+      <!-- Dot -->
+      <div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-gray-600"></div>
+
+      <h3 class="text-xl font-semibold text-white">
+        Machine Learning Engineer (Intern)
+      </h3>
+
+      <p class="text-purple-400 text-sm mb-1">
+        Accolade Tech Solutions
+      </p>
+
+      <p class="text-gray-500 text-sm mb-4">
+        Apr 2023 – Jul 2023 · Mangaluru, Karnataka, India
+      </p>
+
+      <ul class="list-disc ml-5 text-gray-400 space-y-3">
+        <li>
+          Worked on building and evaluating
+          <span class="text-white">machine learning models</span>
+          for real-world business use cases.
+        </li>
+        <li>
+          Performed
+          <span class="text-white">data preprocessing, feature engineering</span>,
+          and exploratory data analysis (EDA).
+        </li>
+
+        <li>
+          Collaborated with senior engineers to understand
+          <span class="text-white">end-to-end ML workflows</span>.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-24 border-t border-gray-800">
+  <h2 class="text-4xl font-bold text-white mb-4">Projects</h2>
+  <p class="text-gray-500 max-w-2xl mb-12">
+    A selection of real-world AI, MLOps, and cloud projects focused on
+    production readiness, automation, and scalability.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-10 max-w-6xl">
+
+    <!-- Project 1 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        Kubernetes MLOps Pipeline
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Built an end-to-end production MLOps system using Kubeflow for pipeline
+        orchestration and MLflow for experiment tracking, model registry, and
+        versioning. Dockerized services were deployed on Kubernetes with
+        full observability.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: Kubeflow · MLflow · Docker · Kubernetes · Prometheus · Grafana
+      </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        Airflow-Based ETL & ML Training Pipeline
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Designed automated workflows using Apache Airflow to orchestrate
+        data ingestion, preprocessing, feature engineering, model training,
+        evaluation, and MLflow-driven deployment.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: Apache Airflow · Python · SQL · MLflow
+      </p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        Model Monitoring with Evidently AI
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Implemented data drift and prediction drift monitoring using
+        Evidently AI, integrated metrics into Prometheus, and visualized
+        model health through Grafana dashboards.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: Evidently AI · Prometheus · Grafana · Python
+      </p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        AWS Serverless ETL Pipeline
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Built an event-driven ETL pipeline using AWS services to automate
+        data ingestion, preprocessing, and notifications with high scalability
+        and minimal operational overhead.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: S3 · Lambda · Glue · EventBridge · SNS · AWS
+      </p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        Azure End-to-End MLOps Pipeline
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Developed a complete MLOps workflow using Azure ML Studio including
+        data ingestion, feature engineering, automated training, CI/CD,
+        model registration, deployment, and performance monitoring.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: Azure ML · CI/CD · Docker · Python
+      </p>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        AI Virtual Assistant (Offline)
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Built an offline conversational AI assistant using LLaMA 3.1 with
+        real-time speech-to-text and text-to-speech capabilities,
+        integrated with a Streamlit-based user interface.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: LLaMA 3.1 · Speech-to-Text · TTS · Streamlit · Python
+      </p>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="border border-gray-800 rounded-xl p-8 hover:border-purple-500 transition">
+      <h3 class="text-xl font-semibold text-white mb-3">
+        AI Coding Assistant & Code Translator
+      </h3>
+      <p class="text-gray-400 leading-relaxed mb-4">
+        Developed an AI-powered coding assistant capable of explaining,
+        debugging, optimizing, and translating code across multiple
+        programming languages using LLMs.
+      </p>
+      <p class="text-sm text-purple-400">
+        Tech: CodeLlama · LLaMA 3 · Python · LLMs
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- CTA -->
+<!-- ================= CALL TO ACTION ================= -->
+<section class="py-28 border-t border-gray-800 text-center relative overflow-hidden">
+
+  <!-- Background Accent -->
+  <div class="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-transparent to-pink-600/10"></div>
+
+  <div class="relative max-w-3xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">
+      Let’s Build Reliable AI Systems
+    </h2>
+
+    <p class="text-gray-400 text-lg leading-relaxed mb-10">
+      I’m open to <span class="text-white">AI/ML</span>,
+      <span class="text-white">MLOps</span>, and
+      <span class="text-white">Data Engineering</span> opportunities
+      where I can design and deploy scalable,
+      production-ready machine learning systems.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex justify-center gap-6 flex-wrap">
+      <!-- <a href="{{ url_for('static', filename='B_Janardhana_Biliya_AIML_Engineer.pdf') }}"
+         class="px-10 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600
+                text-white font-semibold hover:scale-105 transition">
+        Download Resume
+      </a> -->
+<a href="{{ url_for('static', filename='B_Janardhana_Biliya_AIML_Engineer.pdf') }}"
+   download
+   onclick="showToast()"
+   class="px-10 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600
+          text-white font-semibold hover:scale-105 transition">
+  Download Resume
+</a>
+
+      <a href="#contact"
+         class="px-10 py-4 rounded-xl border border-gray-600
+                hover:border-purple-500 transition">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 border-t border-gray-800">
+  <div class="max-w-5xl">
+
+    <!-- Title -->
+    <h2 class="text-4xl font-bold text-white mb-4">
+      Contact
+    </h2>
+    <p class="text-gray-500 mb-12">
+      Feel free to reach out for opportunities, collaborations, or discussions
+      around AI, MLOps, and cloud-native systems.
+    </p>
+
+    <!-- Contact Cards -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Email -->
+      <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <p class="text-purple-400 font-semibold mb-2">Email</p>
+        <a href="mailto:janardhanabiliya25@gmail.com"
+           class="text-gray-300 hover:text-white break-all">
+          janardhanabiliya25@gmail.com
+        </a>
+      </div>
+
+      <!-- Phone -->
+      <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <p class="text-purple-400 font-semibold mb-2">Mobile</p>
+        <a href="tel:+919035979207"
+           class="text-gray-300 hover:text-white">
+          +91 90359 79207
+        </a>
+      </div>
+
+      <!-- Location -->
+      <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <p class="text-purple-400 font-semibold mb-2">Location</p>
+        <p class="text-gray-400">
+          Mangalore, Karnataka, India
+        </p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="border border-gray-800 rounded-xl p-6 hover:border-purple-500 transition">
+        <p class="text-purple-400 font-semibold mb-4">Online</p>
+        <div class="flex gap-8 items-center text-gray-400">
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/b-janardhana-biliya-740507225/"
+     target="_blank"
+     class="flex items-center gap-2 hover:text-purple-400 transition">
+    <i class="devicon-linkedin-plain text-2xl"></i>
+    <span>LinkedIn</span>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/biliyajanardhan"
+     target="_blank"
+     class="flex items-center gap-2 hover:text-purple-400 transition">
+    <i class="devicon-github-original text-2xl"></i>
+    <span>GitHub</span>
+  </a>
+
+</div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<div id="toast"
+     class="fixed inset-0 flex items-center justify-center
+            bg-black/60 backdrop-blur-sm hidden z-50">
+  <div class="bg-gray-900 border border-purple-500 rounded-xl
+              px-8 py-6 text-center max-w-sm shadow-xl">
+    <p class="text-3xl mb-3">🎉</p>
+    <p class="text-white font-semibold text-lg">
+      Thank you for downloading my resume!
+    </p>
+    <p class="text-gray-400 text-sm mt-2">
+      Hope you like my work 😊
+    </p>
+  </div>
+</div>
+  </main>
+</div>
+<script>
+  function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.remove("hidden");
+
+    setTimeout(() => {
+      toast.classList.add("hidden");
+    }, 3500);
+  }
+</script>
+</body>
+</html>
