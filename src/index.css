@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(-45deg, #050816, #0f172a, #1e1b4b, #0a0f2c);
+  background-size: 400% 400%;
+  animation: gradientFlow 18s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Vertical beam animation */
+/* Vertical */
+@keyframes dataDown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes dataUp {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+.animate-dataDown { animation: dataDown 6s linear infinite; }
+.animate-dataUp { animation: dataUp 8s linear infinite; }
+.animate-dataDownSlow { animation: dataDown 12s linear infinite; }
+.animate-dataUpSlow { animation: dataUp 14s linear infinite; }
+
+/* Horizontal */
+@keyframes dataRight {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes dataLeft {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-dataRight { animation: dataRight 10s linear infinite; }
+.animate-dataLeft { animation: dataLeft 12s linear infinite; }
+
+/* Floating */
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+}
+
+.animate-float { animation: float 10s ease-in-out infinite; }
+.animate-floatSlow { animation: float 16s ease-in-out infinite; }
